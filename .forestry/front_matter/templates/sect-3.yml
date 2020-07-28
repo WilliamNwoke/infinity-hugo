@@ -1,4 +1,25 @@
 ---
 label: sect-3
 hide_body: true
-fields: []
+fields:
+- name: sub_mailing
+  type: text
+  config:
+    required: false
+  label: sub_mailing
+  description: Subscribe to mailing list
+- name: description_sub_mail
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: description sub mail
+  description: summary of mailing list
+- name: email
+  type: file
+  config:
+    maxSize: 64
+  label: email

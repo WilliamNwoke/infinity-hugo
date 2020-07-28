@@ -1,4 +1,30 @@
 ---
-label: Home
+label: Header
 hide_body: true
-fields: []
+fields:
+- name: home_text
+  type: text
+  config:
+    required: false
+  label: Home text
+  description: "<strong>The law easy web application, anticipate</strong>"
+- name: tag-line-about
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: tag-line-about
+  description: Description About the site
+- name: countdown_to_launch
+  type: datetime
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: ''
+    display_utc: true
+    export_format: MM/DD/YYYY h:mm
+  label: Countdown to launch
+  description: "<strong>Hours</strong>"

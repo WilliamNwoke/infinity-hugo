@@ -1,4 +1,18 @@
 ---
 label: Sect-1
 hide_body: false
-fields: []
+fields:
+- name: info-about-site
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: info-about-site
+- name: img_slide
+  type: image_gallery
+  config: {}
+  label: img slide
+  description: UI of the website

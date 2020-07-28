@@ -1,4 +1,19 @@
 ---
 label: sect-4
 hide_body: true
-fields: []
+fields:
+- name: get_in_touch
+  type: text
+  config:
+    required: false
+  label: get in touch
+  description: Get in Touch
+- name: reason
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: reason
